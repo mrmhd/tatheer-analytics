@@ -2,7 +2,7 @@ function tatheerAnalytics(w, d, tatheerClientId, eventName, eventParameters) {
   function s(){
       try{
         var x=new XMLHttpRequest();
-        x.open('POST','https://tatheer.app/link/events_collector.php',true);
+        x.open('POST','https://link.tatheer.app/events_collector.php',true);
         x.setRequestHeader('Content-Type','application/json');
         x.timeout = 3000;
         x.ontimeout = x.onerror = function(){
